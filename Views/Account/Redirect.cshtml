@@ -1,0 +1,9 @@
+﻿@model IMPL.IDS.Models.Account.RedirectModel
+
+<meta http-equiv="refresh" 
+      content="0;url=@Model.RedirectUrl" 
+      data-url="@Model.RedirectUrl">
+
+<script>
+    window.location.href = document.querySelector("meta[http-equiv=refresh]").getAttribute("data-url");
+</script>
